@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Cuota
+namespace Domain.Enums
 {
-    public class Cuotas
+    public enum Estado
     {
 
-
-        public int Id { get; set; }
-
-        public 
-
+        Pendiente,
+        Pagado,
+        Eliminado
 
 
 

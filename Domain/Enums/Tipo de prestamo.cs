@@ -4,18 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Cuota
+namespace Domain.Enums
 {
-    public class Cuotas
+   public enum Tipo_de_prestamo
     {
 
-
-        public int Id { get; set; }
-
-        public 
-
-
-
+        Regular,
+        Seguro,
+        Prima
 
     }
 }
