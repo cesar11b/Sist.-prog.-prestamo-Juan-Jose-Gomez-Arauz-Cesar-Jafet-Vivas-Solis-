@@ -13,7 +13,7 @@ namespace Domain.Cuota
 
         public int Id { get; set; }
 
-        public Enum Tipo { get; set; }
+        public Tipo_de_prestamo Tipo_De_Prestamo { get; set; }
 
         public Estado Estado { get; set; }
 
@@ -21,7 +21,7 @@ namespace Domain.Cuota
 
         public DateTime FechaPago { get; set; }
 
-        public Decimal principal { get; set; }
+        public Decimal Principal { get; set; }
 
         public decimal Intereses { get; set; }
 

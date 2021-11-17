@@ -41,7 +41,7 @@ namespace CalculoPag
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbMostrar = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudMonto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTerminos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTasa)).BeginInit();
@@ -149,20 +149,20 @@ namespace CalculoPag
             this.label6.TabIndex = 11;
             this.label6.Text = "Fecha de pago";
             // 
-            // richTextBox1
+            // rtbMostrar
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(401, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(213, 426);
-            this.richTextBox1.TabIndex = 12;
-            this.richTextBox1.Text = "";
+            this.rtbMostrar.Location = new System.Drawing.Point(401, 12);
+            this.rtbMostrar.Name = "rtbMostrar";
+            this.rtbMostrar.Size = new System.Drawing.Size(213, 426);
+            this.rtbMostrar.TabIndex = 12;
+            this.rtbMostrar.Text = "";
             // 
-            // Form1
+            // FrmPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 450);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbMostrar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -175,8 +175,10 @@ namespace CalculoPag
             this.Controls.Add(this.dtpFechavencimiento);
             this.Controls.Add(this.dtpFechaPago);
             this.Controls.Add(this.cmbTipoCuota);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "FrmPago";
+            this.Text = "Calendario Pago";
+            this.Load += new System.EventHandler(this.FrmPago_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudMonto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTerminos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTasa)).EndInit();
@@ -199,7 +201,7 @@ namespace CalculoPag
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbMostrar;
     }
 }
 
