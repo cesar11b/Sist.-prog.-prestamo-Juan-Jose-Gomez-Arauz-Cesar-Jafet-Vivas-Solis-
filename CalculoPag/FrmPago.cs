@@ -17,12 +17,12 @@ namespace CalculoPag
         {
             InitializeComponent();
         }
-
+        List<Cuotas> cuotas= new List<Cuotas>();
         private void FrmPago_Load(object sender, EventArgs e)
         {
-            List<Cuotas> cuotas;
             
-
+            
+            
 
         }
 
@@ -43,14 +43,22 @@ namespace CalculoPag
                     rtbMostrar.Text = $"{c.ToString()} \n";
                 }
 
+
             }
 
         }
 
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+
+            cuotas.Add(new Cuotas()
+            {
+              
+
+            }
+             ); ;
 
 
-
-
-
+        }
     }
 }

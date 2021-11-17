@@ -42,6 +42,7 @@ namespace CalculoPag
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.rtbMostrar = new System.Windows.Forms.RichTextBox();
+            this.btnAceptar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudMonto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTerminos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTasa)).BeginInit();
@@ -157,11 +158,22 @@ namespace CalculoPag
             this.rtbMostrar.TabIndex = 12;
             this.rtbMostrar.Text = "";
             // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(20, 390);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.TabIndex = 13;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
             // FrmPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 450);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.rtbMostrar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -202,6 +214,7 @@ namespace CalculoPag
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox rtbMostrar;
+        private System.Windows.Forms.Button btnAceptar;
     }
 }
 
